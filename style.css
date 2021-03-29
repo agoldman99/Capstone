@@ -362,7 +362,7 @@ body {
   .types-flex-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-start;
     align-items: flex-start;
     /* border: 1px solid #0d2d53; */

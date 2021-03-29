@@ -1,0 +1,458 @@
+/* CSS files add styling rules to your content */
+
+body {
+    display: block;
+    position: static;
+    font-family: "Brandon Grotesque", arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #f6f5eb;
+    overflow: visible;
+  }
+  
+  /*---HEADING/TEXT STYLING---*/
+  
+  h1 {
+    font-size: 80px;
+    color: #0d2d53; }
+  
+  /* MATERIALS NAME STYLE*/
+  h2 {
+    font-size: 20px;
+    color: #0d2d53; }
+  
+  /* NAVIGATION BAR IS H3 */
+  h3 {
+    color: #0d2d53;
+    font-size: 16px;
+    font-weight: bold; }
+  
+  /*same as h2, just in orange*/
+  h5 {
+    font-size: 20px;
+    color: #FF9F69;
+    margin: 0;  }
+  /*light blue, small subheadings*/
+  h6 {
+    font-size: 14px;
+    color: #BBE0EC;}
+  
+  /*white paragraph text*/
+  .act-block-text {
+    font-size: 14px;
+    color: #f6f5eb; }
+  
+  
+  
+  
+  
+  
+  /*---CONTAINER STYLING---*/
+  
+  .main-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  
+  /* PAGE HEADER SECTION*/
+  .header {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  
+  .nav-bar {
+    display: block;
+    margin: 6rem;
+    position: static;
+  }
+  
+  /*ABOUT PLAY BUTTON*/
+  .nav-bar-button1 {flex: 50%;}
+  a:link { color: #0d2d53; text-decoration: none;}
+  a:visited {color: #0d2d53; text-decoration: none;}
+  a:hover {color: #28B8D8; text-decoration: none;}
+  
+  /*MATERIALS FOR PLAY BUTTON*/
+  .nav-bar-button2 {flex: 50%;}
+  a:link { color: #0d2d53; text-decoration: none;}
+  a:visited {color: #0d2d53; text-decoration: none;}
+  a:hover {color: #FF9F69; text-decoration: none;}
+
+  /*---INVERSE NAV COLORS---*/
+  /*ABOUT PLAY BUTTON*/
+  .inverse-nav-bar-button1 {flex: 50%;}
+  a.inverse-nav-bar-button1:link { color: #f6f5eb; text-decoration: none;}
+  a.inverse-nav-bar-button1:visited {color: #f6f5eb; text-decoration: none;}
+  a.inverse-nav-bar-button1:hover {color: #28B8D8; text-decoration: none;}
+  
+  /*MATERIALS FOR PLAY BUTTON*/
+  .inverse-nav-bar-button2 {flex: 50%;}
+  a.inverse-nav-bar-button2:link { color: #f6f5eb; text-decoration: none;}
+  a.inverse-nav-bar-button2:visited {color: #f6f5eb; text-decoration: none;}
+  a.inverse-nav-bar-button2:hover {color: #FF9F69; text-decoration: none;}
+  
+  
+
+
+  
+  /* PLAY coloring section */
+  .play-outline-section {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    top: 50px;
+  }
+  
+  .play-outline {
+    width: 100%;
+    font-size: 200px;
+    font-weight: bold;
+    text-align: center;
+    /* outline code */
+    -webkit-text-stroke: 1px #0d2d53;
+    color: #f6f5eb;
+    text-shadow:
+         5px 5px 0 #0d2d53,
+       -1px -1px 0 #0d2d53,  
+        1px -1px 0 #0d2d53,
+        -1px 1px 0 #0d2d53,
+         1px 1px 0 #0d2d53;
+  }
+
+
+/*----DRAWING CANVAS----*/
+* { in barb code but messing up mine
+  box-sizing: border-box;
+} 
+
+ .canvas-body {
+   /* to make the elements line up in a row*/
+   display: absolute;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   top: 10rem;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+} 
+
+.canvas {
+   /*border: 2px solid grey;*/
+}
+
+.tools {
+   background-color: #f6f5eb;
+   border: 1px solid #f6f5eb;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 804px;
+   padding: 1rem;
+}
+.tools > * {
+   background-color: #0d2d53;
+   border: none;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+   color: #f6f5eb;
+   height: 50px;
+   width: 50px;
+   margin: .25rem;
+   padding: .25rem;
+   cursor: pointer;
+}
+#clear {
+   font-size: 1rem;
+   /* because of flexbox this pushes over */
+   /* to the far right side */
+   margin-left: auto;
+}
+  
+
+
+
+  
+  
+  /* --------MATERIAL PAGE SECTION----------*/
+  .material-section {
+    display: block;
+    width: 100%;
+    position: static;
+  }
+  
+  .grid-material {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 5%;
+    /* border: 1px solid #0d2d53; */
+    padding: 2rem;
+    position: static;
+    width: 100%;
+    height: 500px;
+  }
+
+  .grid-aboutplay {
+    display: grid;
+    grid-template-columns: 24% 24% 24%;
+    grid-column-gap: 5%;
+    /* border: 1px solid #0d2d53; */
+    padding: 2rem;
+    position: static;
+    width: 100%;
+    height: 500px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  
+  .grid-item {
+    /*border: 1px solid #0d2d53;*/
+    margin:0;
+  }
+  
+  .material-box {
+    display: block;
+    border: 2px solid #0d2d53;
+    background-color: #f6f5eb;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+  }
+
+  
+  .outline-box {
+    display: flex;
+    z-index: -1;
+    position: relative;
+    transform: translate(0, -203px);
+    border: 2px solid #0d2d53;
+    background-color: #0d2d53;
+    width: 100%;
+    height: 80%;
+  }
+  
+  .material-box:hover + .outline-box {
+      transform: translate(10px, -212px);
+  }
+
+  img {
+    position: absolute;
+  }
+  
+  
+  /*---------ACTIVITY GRID SECTION-------------*/
+  .grid-activity {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    border: 1px solid #0d2d53;
+    padding: 2%;
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-activity-item {
+    border: 1px solid #0d2d53;
+  }
+
+  .activity-box {
+    display: block;
+    border: 2px solid #0d2d53;
+    background-color: #f6f5eb;
+    text-align: center;
+    width: 95%;
+    height: 80%;
+  }
+  
+  .act-outline-box {
+    /*display: flex;*/
+    display: block;
+    position: absolute;
+    z-index: 2;
+    /*position: relative;*/
+    transform: translate(35px, -438px);
+    border: 2px solid #0d2d53;
+    background-color: #0d2d53;
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+  }
+  
+  .act-sum-div {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  
+  .activity-box:hover + .act-outline-box {
+      z-index: 1;
+  }
+
+    /*expand activity button css*/
+  .act-exp-button {
+      display: block;
+      /* justify-content: center; */
+      border-radius: 50%;
+      background-color:#f6f5eb;
+      color: #0d2d53;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+
+
+
+  /*WHAT IS PLAY? Page*/
+  .what-is-play {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    top: 10rem;
+  }
+
+  .what-is-play-head {
+      /*uses h1 tag*/
+      display: block;
+      width: 40%;
+      margin-left: 6rem;
+      margin-right: 6rem;
+      position: static;
+      /*border: 1px solid #0d2d53;*/
+      float: left;
+
+      /* position: -webkit-sticky; /* Safari */
+      /* position: sticky;
+      align-self: flex-start;
+      top: 50px;
+      overflow: visible; */
+  }
+
+  .answer1div {
+    width: 40%;
+    display: block;
+    margin-left: 6rem;
+    margin-right:6rem;
+    position: static;
+    /*border: 1px solid #0d2d53;*/
+    font-size: 18px;
+    color: #0d2d53;
+    line-height: 1.7rem;
+    float: right;
+  }
+
+
+  .types-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: 1px solid #0d2d53; */
+    width: 40%;
+  }
+
+
+  .types-flex-item {
+    border: 1px solid #0d2d53;
+    font-size: 18px;
+    color: #0d2d53;
+    line-height: 1.7rem;
+    margin: .5rem;
+    padding: 1rem;
+  }
+
+
+
+
+/*------EXPANDED ACTIVITY PAGE------*/
+    /*ID is in body tag*/
+#exp-activity-page {
+    background-color:#0d2d53;}
+  
+  
+  /* FOOTER PAGE SECTION*/
+  .footer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+
+
+
+
+
+
+
+
+  /*----HOME SQUARES PRACTICE CSS-------*/
+  .square-background-section {
+      position: absolute;
+      /* z-index: -10; */
+      left: 0px;
+      top:0px;
+      width: 100%;
+      height:100%;
+      min-height: 100%;
+  }
+  .square-grid-container {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      background-color:#f6f5eb;
+      /*border-style: solid; border-color:#0d2d53; border-width: 2px;*/
+      margin: 0;
+      height:100%;
+      min-height: 100%;
+  }
+  .square-grid-item {
+      background-color:#0d2d53;
+      /* border-width: 1px; border-style: solid; border-color: #0d2d53;*/
+      height:100%;
+      min-height: 100%;
+  }
+
+  /*ON ACTIVITY EXAMPLES BACKGROUNDS*/
+  /*for true square backgrounds with negtive z-index*/
+  .square-background-section-neg {
+    position: absolute;
+    z-index: -10;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height:100%;
+    min-height: 100%;
+}
+.square-grid-item {
+  background-color:#D1574F;
+  /*border-width: 1px; border-style: solid; border-color:#f6f5eb;*/
+  /* height:100%; */
+  height: 250px;
+  min-height: 100%;
+}
+
+
+
+
+
+
+
+  
+  

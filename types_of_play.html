@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PLAY</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    
+  </head>  
+  
+  
+  
+<body>
+
+    
+<!--FULL PAGE SECTION CLASS-->
+    <section class="main-container">
+      
+      
+<!-- PAGE NAVIGATION BAR -->
+    <section class="header">
+      <div class="nav-bar">
+        <h3 class="nav-bar-button1" style="float:left"><a href="material.html">MATERIALS FOR PLAY</a></h3>
+        <h3 class="nav-bar-button2" style="float:right"><a href="about-play-index.html">ABOUT PLAY</a></h3>
+      </div>
+    </section>
+
+      
+      
+<!-- MAIN DRAWING PLAY SECTION -->
+  <section class="material-section">
+
+         <!-- DRAWING CANVAS -->
+         <div class="canvas-body">
+          <canvas id="canvas" height="700" width="1600"></canvas>
+          </div>
+
+        <!-- area for the tools -->
+        <div class="tools">
+            <button id="decr">-</button>
+            <span id="lineWidth">10</span>
+            <button id="incr">+</button>
+            <input type="color" id="color">
+            <button id="clear">Clear</button>
+        </div>
+
+
+    <section class="what-is-play">
+      <h1 class="what-is-play-head">WHAT IS PLAY?</h1>
+      <div class="answer1div">
+      <p> "The key to leveraging play into all aspects of the school day
+        and life is understanding that, above all else, play is intensely personal...
+        <br><br>
+        The challenge in defining play is that almost anything can be play if it
+        fulfills certain characteristics, and it is these characteristics that make play
+        so essential for brain development...
+      <br><br>
+        In short, something is play if you have chosen to do it, have the capacity
+        to pretend and change as you go, and enjoy it for the most part. This does
+        not mean, however, that play is always "nice" or "safe"...
+      <br><br>
+        True play always involves a certain amount of safe risk, and through
+        navigating that risk, children and adults learn ways to survive in the real
+        world, both emotionally and physically." -- Purposeful Play Book</p>
+      </div>
+
+
+
+
+      <h1 class="what-is-play-head">TYPES OF PLAY</h1>
+      <div class="answer1div">
+        <div class="types-flex-container">
+          <div class="types-flex-item">
+          <h5>1. Fantasy/Imaginative Play</h5>
+          <br>
+          In fantasy play, children choose an imaginary scenario in which they take on
+          and act out roles and then determine a set of rules from these roles. Self-regulation 
+          becomes essential as children develop and adhere to sets of rules that define 
+          those rules.
+          <br>
+          Because fantasy play often requires the substitution of one object for another,
+          it also develops abstract thinking.
+          <br>
+          As children begin to think abstractly, they conceptualize or generalize their
+          understanding that a single object can have multiple meanings. This kind of abstract 
+          thinking is an essential tool for higher-level thinking and is often mandated in 
+          state standards, including the Common Core.
+          </div>
+          <div class="types-flex-item">
+            <h5>2. Constructive Play</h5>
+            <br>
+            Constructive play is an organized form of play that is, in many ways, goal- 
+            and product- oriented. Children use materials to create something, an activity 
+            that increases in complexity as they get older. Most constructive play happens 
+            in classrooms during choice time and typically involves playing or constructing 
+            with three-dimensional materials like blocks, playdough, art materials, and 
+            recycled materials.
+            <br>
+            Because of its enormous potential for problem solving, connecting, deepening understanding, 
+            and replicating learning with open-ended materials, constructive play is one way 
+            to keep math, science, and engineering relevant in our classrooms.
+            <br>
+            As children examine, explore, sort, and arrange materials, ideas and imagination begin 
+            to flow, and questions arise naturally. Kids wonder: What will happen if I put this here?
+            How tall will it go? How can I keep my structure from breaking? What colors do I need to use?
+            </div>
+            <div class="types-flex-item">
+              <h5>3. Games with Rules</h5>
+              <br>
+              In another kind of game - games with rules - kids develop a different set of 
+              skills and strategies than in fantasy play, where children set the boundaries
+              of play. In a game, rules are set, and in order to play the game and make the game 
+              work, you have to comply with those rules. 
+              <br>
+              As children come to understand that they have to follow the rules or there is no game, 
+              they strengthen self-regulation. 
+              <br>
+              Games with rules are often characterized by logic and order, and as children grow 
+              older they begin to develop strategy and planning in their game playing. 
+              <br>
+              When playing games with rules, children also build important social skills such as 
+              cooperation and healthy competition. They need to negotiate and work cohesively to 
+              play the game. Competition is a mighty force in human nature that playing rule-based 
+              games can work to regulate. Understanding what it means to win and how it feels to lose 
+              is an essential part of building empathy. Games with rules can also build resilience when 
+              kids experience setbacks.
+              </div>
+            <div class="types-flex-item">
+              <h5>4. Parallel Play</h5>
+              <br>
+              In this type of play, the child chooses to play with the same 
+              materials as another child, such as two children playing alongside 
+              one another in the block center. One child might be building a 
+              spaceship, and the other might be building a zoo. They tend not to 
+              communicate, but if they do it is to talk about what they themselves
+              are doing.                
+              </div>
+          
+        </div>
+      </div>
+
+
+
+
+
+
+      <h1 class="what-is-play-head">STAGES OF PLAY</h1>
+      <div class="answer1div">
+        <div class="types-flex-container">
+          <div class="types-flex-item">
+          <h5>1. Unoccupied Behavior</h5>
+          <br>
+          In this most immature form of play, a child randomly observes
+          anything that catches his interest. If nothing catches his interest,
+          he will occupy himself by fidgeting or engaging in repetitive behavior,
+          such as spinning in circles or banging hands on a table.
+          </div>
+          <div class="types-flex-item">
+            <h5>2. Onlooker Behavior</h5>
+            <br>
+            The child's observations are more deliberate in nature, in that 
+            the child chooses to observe children at play. She might even approach
+            children playing and ask them questions about their play but does not
+            attempt to play herself.
+            </div>
+            <div class="types-flex-item">
+              <h5>3. Solitary Play</h5>
+              <br>
+              As the name suggests, in solitary play a child chooses to play alone. 
+              The child might play near another group of children; however, he plays
+              with a different toy or activity and is self-absorbed in his own play.
+              </div>
+            <div class="types-flex-item">
+              <h5>4. Parallel Play</h5>
+              <br>
+              In this type of play, the child chooses to play with the same 
+              materials as another child, such as two children playing alongside 
+              one another in the block center. One child might be building a 
+              spaceship, and the other might be building a zoo. They tend not to 
+              communicate, but if they do it is to talk about what they themselves
+              are doing.                
+              </div>
+            <div class="types-flex-item">
+                <h5>5. Associative Play</h5>
+                <br>
+                In associative play children choose to play together in a group with
+                the same materials or activity. They share materials with one another 
+                and may even decide to work on an identical project; however there is 
+                no planning involved or organization of roles. 
+              </div>
+            <div class="types-flex-item">
+                <h5>6. Cooperative Play</h5>
+                <br>
+                This is considered the most mature form of play. In cooperative play, 
+                children plan how their play will go. They discuss and negotiate roles, 
+                and they role-play and dramatize scenarios. In this form of play, 
+                children often need to compromise and forego their individual goals in 
+                order to sustain the play in the group activity.
+              </div>
+          
+        </div>
+      </div>
+
+
+
+      <h1 class="what-is-play-head">WHAT DOES PLAY AT HOME LOOK LIKE?</h1>
+      <div class="answer1div">
+      <p> "The home environment and the community are where young children
+        spend the larger, if not the largest, part of their early lives, interacting
+        with parents, siblings, extended family members, and neighbors.
+        These interactions and relationships have a significant influence over how
+        children understand and experience the world around them. Indeed, 
+        home environments and the community provide excellent opportunities to 
+        promote learning through play from the early years through pre-primary 
+        and primary years.
+        <br><br>
+        Primary caregivers, as children's "first teachers," are the biggest 
+        supporters of children's learning, and therefore have an important role 
+        in creating the space for learning through play. It is therefore essential 
+        to support caregivers and empower them to take an active role in 
+        shaping children's learning and development, as well as to facilitate playful 
+        learning for their children at home and in the community 
+        in day-to-day experiences." - UNICEF/LEGO
+      </div>
+
+
+      </section>
+    </section>
+      
+      
+<!-- PAGE FOOTER -->
+    <section class="footer">
+      
+      </section>
+      
+      
+    </section>
+  </body>
+</html>
+
+

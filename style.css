@@ -13,8 +13,9 @@ body {
   /*---HEADING/TEXT STYLING---*/
   
   h1 {
-    font-size: 80px;
-    color: #0d2d53; }
+    font-size: 90px;
+    color: #0d2d53;
+    margin:0; }
   
   /* MATERIALS NAME STYLE*/
   h2 {
@@ -41,6 +42,13 @@ body {
   .act-block-text {
     font-size: 14px;
     color: #f6f5eb; }
+
+  /*styles for source links*/
+  .source {
+    font-size: 16px;
+    color: #FF9F69;
+    margin: 0;
+  }
   
   
   
@@ -126,7 +134,7 @@ body {
 
 
 /*----DRAWING CANVAS----*/
-* { in barb code but messing up mine
+* { /*in barb code but messing up mine*/
   box-sizing: border-box;
 } 
 
@@ -148,36 +156,36 @@ body {
 }
 
 .tools {
-   background-color: #f6f5eb;
-   border: 1px solid #f6f5eb;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   width: 804px;
-   padding: 1rem;
+  background-color: #f6f5eb;
+  border: 1px solid #f6f5eb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 804px;
+  padding: 1rem;
 }
 .tools > * {
-   background-color: #0d2d53;
-   border: none;
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 2rem;
-   color: #f6f5eb;
-   height: 50px;
-   width: 50px;
-   margin: .25rem;
-   padding: .25rem;
-   cursor: pointer;
+  background-color: #0d2d53;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #f6f5eb;
+  height: 50px;
+  width: 50px;
+  margin: .25rem;
+  padding: .25rem;
+  cursor: pointer;
 }
 #clear {
-   font-size: 1rem;
-   /* because of flexbox this pushes over */
-   /* to the far right side */
-   margin-left: auto;
+  font-size: 1rem;
+  /* because of flexbox this pushes over */
+  /* to the far right side */
+  margin-left: auto;
 }
-  
+ 
 
 
 
@@ -322,10 +330,15 @@ body {
   /*WHAT IS PLAY? Page*/
   .what-is-play {
     display: block;
-    position: absolute;
+    /* position: absolute; -- position relative for the canvas to be on top of the section*/
+    position: relative;
     width: 100%;
+    /*adding height might mess up responsiveness? 
+      unsure, but need to add space somehow...*/
+    height: 80rem;
     z-index: -2;
     top: 10rem;
+    margin-left: 6rem;
   }
 
   .what-is-play-head {
@@ -346,7 +359,7 @@ body {
   }
 
   .answer1div {
-    width: 40%;
+    width: 30%;
     display: block;
     margin-left: 6rem;
     margin-right:6rem;

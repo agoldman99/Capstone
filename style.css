@@ -395,6 +395,13 @@ body {
     margin-left: 6rem;
   }
 
+    /*THESE HOVER STATES ETC ARE NOT WORKING*/
+  .next-extend {flex: 30%;
+    border: 1px solid #0d2d53;}
+    a.next-extend:link { color: #0d2d53; text-decoration: none;}
+    a.next-extend:visited {color: #0d2d53; text-decoration: none;}
+    a.next-extend:hover {color: #28B8D8; text-decoration: none;}
+
 
   .types-flex-container {
     display: flex;

@@ -1,5 +1,9 @@
 /* CSS files add styling rules to your content */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     display: block;
     position: static;
@@ -26,7 +30,8 @@ body {
   h3 {
     color: #0d2d53;
     font-size: 16px;
-    font-weight: bold; }
+    font-weight: bold;
+    display: inline; }
   
   /*same as h2, just in orange*/
   h5 {
@@ -60,7 +65,7 @@ body {
   .main-container {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 6000px;
     position: static;
   }
   
@@ -75,17 +80,26 @@ body {
   .nav-bar {
     display: block;
     margin: 6rem;
-    position: static;
+    /* position: static; */
+    position: relative;
+  }
+
+  .website-title {
+    color: #FF9F69;
+    float:center;
+    border: 1px solid #0d2d53;
   }
   
   /*ABOUT PLAY BUTTON*/
-  .nav-bar-button1 {flex: 50%;}
+  .nav-bar-button1 {flex: 30%;
+    border: 1px solid #0d2d53;}
   a:link { color: #0d2d53; text-decoration: none;}
   a:visited {color: #0d2d53; text-decoration: none;}
   a:hover {color: #28B8D8; text-decoration: none;}
   
   /*MATERIALS FOR PLAY BUTTON*/
-  .nav-bar-button2 {flex: 50%;}
+  .nav-bar-button2 {flex: 30%;
+    border: 1px solid #0d2d53;}
   a:link { color: #0d2d53; text-decoration: none;}
   a:visited {color: #0d2d53; text-decoration: none;}
   a:hover {color: #FF9F69; text-decoration: none;}
@@ -152,7 +166,7 @@ body {
 } 
 
 .canvas {
-   /*border: 2px solid grey;*/
+   border: 2px solid grey;
 }
 
 .tools {
@@ -329,15 +343,15 @@ body {
 
   /*WHAT IS PLAY? Page*/
   .what-is-play {
-    display: block;
-    /* position: absolute; -- position relative for the canvas to be on top of the section*/
-    position: relative;
+    /* display: block; */
+    position: absolute;
+    /* position: relative; -- for sections to not be on top of each other*/
     width: 100%;
     /*adding height might mess up responsiveness? 
       unsure, but need to add space somehow...*/
     height: 80rem;
     z-index: -2;
-    top: 10rem;
+    top: 30rem;
     margin-left: 6rem;
   }
 
@@ -347,28 +361,36 @@ body {
       width: 40%;
       margin-left: 6rem;
       margin-right: 6rem;
-      position: static;
-      /*border: 1px solid #0d2d53;*/
+      border: 1px solid #0d2d53;
       float: left;
 
-      /* position: -webkit-sticky; /* Safari */
-      /* position: sticky;
-      align-self: flex-start;
-      top: 50px;
-      overflow: visible; */
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;    
   }
 
   .answer1div {
+    display: flex;
+    flex-direction: column;
     width: 30%;
-    display: block;
     margin-left: 6rem;
     margin-right:6rem;
     position: static;
-    /*border: 1px solid #0d2d53;*/
+    border: 1px solid #0d2d53;
     font-size: 18px;
     color: #0d2d53;
     line-height: 1.7rem;
     float: right;
+  }
+
+  .next-extend{
+    background-color: #FF9F69;
+    color: #0d2d53;
+    height: 400px;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 6rem;
   }
 
 

@@ -163,10 +163,12 @@ body {
    width: 100%;
    height: 100%;
    margin: 0;
+   border: 2px solid grey;
 } 
 
 .canvas {
-   border: 2px solid grey;
+   /* border: 2px solid grey; */
+   width: 100%;
 }
 
 .tools {
@@ -482,6 +484,7 @@ body {
   height: 250px;
   min-height: 100%;
 }
+
 
 
 

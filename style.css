@@ -82,7 +82,8 @@ body {
     display: block;
     margin: 6rem;
     /* position: static; */
-    position: relative;
+    position: fixed;
+    background-color: #f6f5eb;
   }
 
   .website-title {

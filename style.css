@@ -374,6 +374,15 @@ body {
       position: sticky;
       top: 0;    
   }
+  .what-is-play-head-nostick {
+     /*uses h1 tag*/
+     display: block;
+     width: 40%;
+     margin-left: 6rem;
+     margin-right: 6rem;
+     border: 1px solid #0d2d53;
+     float: left;
+  }
 
   .answer1div {
     display: flex;
@@ -388,6 +397,22 @@ body {
     line-height: 1.7rem;
     float: right;
   }
+
+  .horizontal-answer-div {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    position: static;
+    border: 1px solid #0d2d53;
+    font-size: 18px;
+    color: #0d2d53;
+    line-height: 1.7rem;
+    float: left;
+    overflow: hidden;
+  }
+
 
   .next-extend{
     background-color: #FF9F69;
@@ -431,7 +456,16 @@ body {
     font-size: 18px;
     color: #0d2d53;
     line-height: 1.7rem;
-    margin: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .types-flex-item-horz {
+    border: 1px solid #0d2d53;
+    font-size: 18px;
+    color: #0d2d53;
+    line-height: 1.7rem;
+    margin: 1rem;
     padding: 1rem;
   }
 

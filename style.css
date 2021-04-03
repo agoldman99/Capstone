@@ -346,6 +346,13 @@ body {
 
 
   /*WHAT IS PLAY? Page*/
+  .what-is-play-section {
+    display: block;
+    width: 100%;
+    height: 5300px;
+    position: static;
+  }
+
   .what-is-play {
     /* display: block; */
     position: absolute;
@@ -405,6 +412,14 @@ body {
     a.next-extend:hover {color: #28B8D8; text-decoration: none;}
 
 
+/*TYPES OF PLAY SECTION*/
+.types-of-play-section {
+  display: block;
+  width: 100%;
+  height: 5600px;
+  position: static;
+}
+
   .types-flex-container {
     display: flex;
     flex-direction: row;
@@ -436,9 +451,10 @@ body {
   
   /* FOOTER PAGE SECTION*/
   .footer {
+    background-color: #D1574F;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100px;
     position: static;
   }
 

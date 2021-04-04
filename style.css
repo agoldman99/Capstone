@@ -251,6 +251,12 @@ body {
     width: 100%;
     height: 80%;
   }
+  .material-box:hover {
+    outline: 7px solid #0d2d53;
+    outline-offset: -7px;
+    /* outline-offset: -20px; */
+  }
+
 
   
   /* .outline-box {
@@ -462,6 +468,7 @@ over the flip box container */
     z-index: -2;
     top: 30rem;
     margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .what-is-play-head {
@@ -528,14 +535,24 @@ over the flip box container */
 
   .next-extend-button{
     color: #0d2d53;
+    background-color: #f6f5eb;
+    border: 2px solid #0d2d53;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
-    /*THESE HOVER STATES ETC ARE NOT WORKING*/
-  .next-extend {flex: 30%;
-    border: 1px solid #0d2d53;}
-    a.next-extend:link { color: #0d2d53; text-decoration: none;}
-    a.next-extend:visited {color: #0d2d53; text-decoration: none;}
-    a.next-extend:hover {color: #28B8D8; text-decoration: none;}
+  .next-extend-button:hover {
+    background-color: #0d2d53;
+    color: #f6f5eb;
+  }
 
 
 /*TYPES OF PLAY SECTION*/

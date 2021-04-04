@@ -297,6 +297,21 @@ body {
   height: 80%;
 }
 
+.activities-extend {
+  color: #0d2d53;
+  font-size:20px;
+  font-weight:bold;
+  background-color:#f6f5eb;
+  border:none;
+  border-radius:50%;
+  width:2rem;
+  height:2rem;
+}
+
+.activities-extend:hover {
+  background-color: #FF9F69;
+}
+
 /*flip card activities section*/
 /* The flip card container - set the width and height to 
 whatever you want. We have added the border property to 

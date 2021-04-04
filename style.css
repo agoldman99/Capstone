@@ -171,7 +171,7 @@ body {
    width: 100%;
 }
 
-.tools {
+/* .tools {
   background-color: #f6f5eb;
   border: 1px solid #f6f5eb;
   display: flex;
@@ -180,8 +180,8 @@ body {
   justify-content: center;
   width: 804px;
   padding: 1rem;
-}
-.tools > * {
+} */
+/* .tools > * {
   background-color: #0d2d53;
   border: none;
   display: inline-flex;
@@ -194,7 +194,7 @@ body {
   margin: .25rem;
   padding: .25rem;
   cursor: pointer;
-}
+} */
 #clear {
   font-size: 1rem;
   /* because of flexbox this pushes over */
@@ -268,10 +268,41 @@ body {
       transform: translate(10px, -212px);
   } */
 
+
+
+
+/*-------NEW ACTIVITIES SECTION------*/
+.grid-activities {
+  display: grid;
+  grid-template-columns: 24% 24% 24%;
+  grid-column-gap: 5%;
+  /* border: 1px solid #0d2d53; */
+  padding: 2rem;
+  position: static;
+  width: 100%;
+  height: 500px;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.grid-activities-item {
+  /*border: 1px solid #0d2d53;*/
+  margin:0;
+}
+.activities-box {
+  display: block;
+  border: 2px solid #0d2d53;
+  background-color: #f6f5eb;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+}
+
+
+
   
   
-  /*---------ACTIVITY GRID SECTION-------------*/
-  .grid-activity {
+  /*---------ACTIVITY GRID SECTION (speclled activity means its old)-------------*/
+  /* .grid-activity {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-column-gap: 5%;
@@ -281,20 +312,20 @@ body {
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
+  } */
   
-  .grid-activity-item {
+  /* .grid-activity-item {
     border: 1px solid #0d2d53;
-  }
+  } */
 
-  .activity-box {
+  /* .activity-box {
     display: block;
     border: 2px solid #0d2d53;
     background-color: #f6f5eb;
     text-align: center;
     width: 95%;
     height: 80%;
-  }
+  } */
   
   .act-outline-box {
     /*display: flex;*/

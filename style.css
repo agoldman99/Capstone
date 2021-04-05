@@ -89,19 +89,19 @@ body {
   .website-title {
     color: #FF9F69;
     float:center;
-    border: 1px solid #0d2d53;
+    /* border: 1px solid #0d2d53; */
   }
   
   /*ABOUT PLAY BUTTON*/
   .nav-bar-button1 {flex: 30%;
-    border: 1px solid #0d2d53;}
+    /* border: 1px solid #0d2d53;*/}
   a:link { color: #0d2d53; text-decoration: none;}
   a:visited {color: #0d2d53; text-decoration: none;}
   a:hover {color: #28B8D8; text-decoration: none;}
   
   /*MATERIALS FOR PLAY BUTTON*/
   .nav-bar-button2 {flex: 30%;
-    border: 1px solid #0d2d53;}
+    /*border: 1px solid #0d2d53;*/}
   a:link { color: #0d2d53; text-decoration: none;}
   a:visited {color: #0d2d53; text-decoration: none;}
   a:hover {color: #FF9F69; text-decoration: none;}
@@ -292,13 +292,13 @@ over the flip box container */
     /*this might have caused the random horizontal scroll??*/
     /* margin-left: 6rem;
     margin-right: 6rem; */
-    border: 1px solid #FF9F69;
+    /* border: 1px solid #FF9F69; */
   }
 
   .material-description {
     display: block;
     position: relative;
-    border: 1px solid #FF9F69;
+    /* border: 1px solid #FF9F69; */
 
     margin: 0;
     top: 50%;
@@ -573,7 +573,7 @@ over the flip box container */
       width: 40%;
       margin-left: 6rem;
       margin-right: 6rem;
-      border: 1px solid #0d2d53;
+      /* border: 1px solid #0d2d53; */
       float: left;
 
       position: -webkit-sticky; /* Safari */
@@ -586,7 +586,7 @@ over the flip box container */
      width: 40%;
      margin-left: 6rem;
      margin-right: 6rem;
-     border: 1px solid #0d2d53;
+     /* border: 1px solid #0d2d53; */
      float: left;
   }
 
@@ -597,7 +597,7 @@ over the flip box container */
     margin-left: 6rem;
     margin-right:6rem;
     position: static;
-    border: 1px solid #0d2d53;
+    /* border: 1px solid #0d2d53; */
     font-size: 18px;
     color: #0d2d53;
     line-height: 1.7rem;
@@ -611,7 +611,7 @@ over the flip box container */
     margin-left: 6rem;
     margin-right: 6rem;
     position: static;
-    border: 1px solid #0d2d53;
+    /* border: 1px solid #0d2d53; */
     font-size: 18px;
     color: #0d2d53;
     line-height: 1.7rem;
@@ -626,7 +626,7 @@ over the flip box container */
     width: 100%;
     /* margin-left: 6rem;
     margin-right: 6rem; */
-    border: 1px solid #FF9F69;
+    /* border: 1px solid #FF9F69; */
   }
 
   .next-extend-button{
@@ -665,7 +665,7 @@ over the flip box container */
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 1px solid #FF9F69;
+    /* border: 1px solid #FF9F69; */
     /* width: 40%; */
   }
 

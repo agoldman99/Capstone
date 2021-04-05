@@ -40,7 +40,8 @@ body {
   /*light blue, small subheadings*/
   h6 {
     font-size: 14px;
-    color: #BBE0EC;}
+    color: #BBE0EC;
+    margin:0;}
   
   /*white paragraph text*/
   .act-block-text {
@@ -66,6 +67,7 @@ body {
     width: 100%;
     height: 6000px;
     position: static;
+    overflow-x: hidden;
   }
   
   /* PAGE HEADER SECTION*/
@@ -201,7 +203,74 @@ body {
   /* to the far right side */
   margin-left: auto;
 }
+
+
+
+/*CIRCLE flip card HOME section*/
+/* The flip card container - set the width and height to 
+whatever you want. We have added the border property to 
+demonstrate that the flip itself goes out of the box on 
+hover (remove perspective if you don't want the 3D effect */
+.circle-flip-card {
+  background-color: transparent;
+  /*width and height at 100%, so fills the "grid-activities-item" width/height*/
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /*Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and 
+back side */
+.circle-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse 
+over the flip box container */
+.circle-flip-card:hover .circle-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.circle-flip-card-front, .circle-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.circle-flip-card-front {
+  background-color: #D1574F;
+  color: #0d2d53;
+  border-radius: 50%;
+}
+
+/* Style the back side */
+.circle-flip-card-back {
+  background-color: #FF9F69;
+  color: #f6f5eb;
+  transform: rotateY(180deg);
+  height: 100%;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+/*div to control quote text size so no spill outside circle*/
+.quote-text-circle {
+  width: 90%;
+  height: 90%;
+}
  
+
 
 
 
@@ -215,22 +284,20 @@ body {
   }
 
   .mat-description-div {
-    height: 20rem;
+    height: 10rem;
     display: block;
     position: absolute;
     top: 25%;
     width: 100%;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    /*this might have caused the random horizontal scroll??*/
+    /* margin-left: 6rem;
+    margin-right: 6rem; */
     border: 1px solid #FF9F69;
   }
 
   .material-description {
     display: block;
     position: relative;
-    width: 100%;
-    margin-left: 6rem;
-    margin-right: 6rem;
     border: 1px solid #FF9F69;
 
     margin: 0;
@@ -246,7 +313,9 @@ body {
     grid-column-gap: 5%;
     /* border: 1px solid #0d2d53; */
     padding: 2rem;
-    position: static;
+    /* position: static; */
+    position: absolute;
+    top: 50%;
     width: 100%;
     height: 500px;
   }
@@ -493,8 +562,9 @@ over the flip box container */
     height: 80rem;
     z-index: -2;
     top: 30rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    /*this might have been causing the weird horizontal scroll??*/
+    /* margin-left: 6rem;
+    margin-right: 6rem; */
   }
 
   .what-is-play-head {
@@ -554,8 +624,8 @@ over the flip box container */
     display: block;
     position: absolute;
     width: 100%;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    /* margin-left: 6rem;
+    margin-right: 6rem; */
     border: 1px solid #FF9F69;
   }
 
@@ -627,14 +697,14 @@ over the flip box container */
     background-color:#0d2d53;}
   
   
-  /* FOOTER PAGE SECTION*/
+  /* FOOTER PAGE SECTION
   .footer {
     background-color: #D1574F;
     display: block;
     width: 100%;
     height: 100px;
     position: absolute;
-  }
+  } */
 
 
 

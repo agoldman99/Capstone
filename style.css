@@ -624,6 +624,7 @@ over the flip box container */
     display: block;
     position: absolute;
     width: 100%;
+    background-color: #D1574F;
     /* margin-left: 6rem;
     margin-right: 6rem; */
     /* border: 1px solid #FF9F69; */

@@ -82,8 +82,7 @@ body {
   .nav-bar {
     display: block;
     margin: 6rem;
-    /* position: static; */
-    position: fixed;
+    position: static;
     background-color: #f6f5eb;
   }
 
@@ -215,8 +214,8 @@ hover (remove perspective if you don't want the 3D effect */
 .circle-flip-card {
   background-color: transparent;
   /*width and height at 100%, so fills the "grid-activities-item" width/height*/
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px; /*Remove this if you don't want the 3D effect */

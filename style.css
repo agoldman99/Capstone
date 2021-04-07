@@ -35,7 +35,10 @@ body {
   
   /* MATERIALS NAME STYLE*/
   h2 {
-    font-size: 20px;
+    font-family: obviously-narrow,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
     color: #0d2d53; }
   
   /* NAVIGATION BAR IS H3 */
@@ -80,7 +83,8 @@ body {
     width: 100%;
     height: 6000px;
     position: static;
-    overflow-x: hidden;
+    /*"overflow:hidden" caused "position:sticky" later on to not work*/
+    /* overflow-x: hidden; */
   }
   
   /* PAGE HEADER SECTION*/
@@ -136,8 +140,8 @@ body {
 
   /*HOME PAGE, LONG QUOTE*/
   .home-long-quote {
-    position: absolute; 
-    top: 10rem;
+    position: absolute;
+    top: 0;
     font-family: obviously-narrow,sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -148,7 +152,6 @@ body {
     left: 50%;
     -ms-transform: translateX( -50%);
     transform: translateX(-50%);
-
   }
 
   
@@ -322,12 +325,14 @@ over the flip box container */
     /* margin-left: 6rem;
     margin-right: 6rem; */
     /* border: 1px solid #FF9F69; */
+    padding: 6rem;
   }
 
   .material-description {
     display: block;
     position: relative;
     /* border: 1px solid #FF9F69; */
+    text-align: center;
 
     margin: 0;
     top: 50%;
@@ -577,7 +582,8 @@ over the flip box container */
   .what-is-play-section {
     display: block;
     width: 100%;
-    height: 5300px;
+    /* height: 5300px; */
+    height: 100%;
     position: static;
   }
 
@@ -588,7 +594,8 @@ over the flip box container */
     width: 100%;
     /*adding height might mess up responsiveness? 
       unsure, but need to add space somehow...*/
-    height: 80rem;
+    /* height: 80rem; */
+    height: 100%;
     z-index: -2;
     top: 30rem;
     /*this might have been causing the weird horizontal scroll??*/
@@ -597,18 +604,22 @@ over the flip box container */
   }
 
   .what-is-play-head {
-      /*uses h1 tag*/
       display: block;
       width: 40%;
+      height: 400%;
       margin-left: 6rem;
       margin-right: 6rem;
       /* border: 1px solid #0d2d53; */
-      float: left;
+      float: left; 
+  }
 
+  .Q-header {
+      /*uses h1 tag*/
       position: -webkit-sticky; /* Safari */
       position: sticky;
-      top: 250px;    
+      top: 20%; 
   }
+
   .what-is-play-head-nostick {
      /*uses h1 tag*/
      display: block;
@@ -623,6 +634,7 @@ over the flip box container */
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: 100%;
     margin-left: 6rem;
     margin-right:6rem;
     position: static;
@@ -631,6 +643,15 @@ over the flip box container */
     color: #0d2d53;
     line-height: 1.7rem;
     float: right;
+  }
+
+  .answer1 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20%; 
+    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .horizontal-answer-div {

@@ -29,9 +29,13 @@ body {
   /*---HEADING/TEXT STYLING---*/
   
   h1 {
-    font-size: 90px;
+    font-family: obviously-narrow,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 150px;
     color: #0d2d53;
-    margin:0; }
+    margin:0;
+    line-height: 10rem; }
   
   /* MATERIALS NAME STYLE*/
   h2 {

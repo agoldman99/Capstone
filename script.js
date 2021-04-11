@@ -10,9 +10,9 @@ const clearEl = document.getElementById('clear');
 const ctx = canvas.getContext('2d');
 
 /* initialize global variables */
-let radius = 10;           /* this is the circle radius and the line width */
-let isPressed = false;
-let color = 'black';
+let radius = 3;           /* this is the circle radius and the line width */
+let isPressed = true;
+let color = '#0d2d53';
 let currPosX, currPosY; /* position of the mouse; they start out undefined */
 
 /* set up the event listeners */
@@ -117,8 +117,6 @@ colorEl.addEventListener('change', (e) =>
 /* the clear button */
 clearEl.addEventListener('click', () => 
             ctx.clearRect(0, 0, canvas.width, canvas.height));
-
-
 
 
 

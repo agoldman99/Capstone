@@ -186,22 +186,12 @@ body {
 
 
 /*----DRAWING CANVAS----*/
-* { /*in barb code but messing up mine*/
+* {
   box-sizing: border-box;
 } 
 
  .canvas-body {
-   /* to make the elements line up in a row*/
-   /* display: absolute;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   top: 10rem;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   margin: 0;*/
-   border: 2px solid grey;
+   /*border: 2px solid grey;*/
    border-radius:50%;
    width:100%; 
    height:100%;
@@ -212,41 +202,18 @@ body {
    transform: translate(-50%,-50%);
 } 
 
-.canvas {
+.canvas { /*actual drawing canvas*/
    display: block;
    width:100%; 
    height:100%;
 }
 
-/* .tools {
-  background-color: #f6f5eb;
-  border: 1px solid #f6f5eb;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 804px;
-  padding: 1rem;
-} */
-/* .tools > * {
-  background-color: #0d2d53;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: #f6f5eb;
-  height: 50px;
-  width: 50px;
-  margin: .25rem;
-  padding: .25rem;
-  cursor: pointer;
-} */
-#clear {
+#clear { /*canvas clear button*/
   font-size: 1rem;
   /* because of flexbox this pushes over */
   /* to the far right side */
-  margin-left: auto;
+  margin-left: 65%;
+  margin-top: 8%;
 }
 
 
@@ -396,25 +363,7 @@ over the flip box container */
   .material-box:hover {
     outline: 7px solid #0d2d53;
     outline-offset: -7px;
-    /* outline-offset: -20px; */
   }
-
-
-  
-  /* .outline-box {
-    display: flex;
-    z-index: -1;
-    position: relative;
-    transform: translate(0, -203px);
-    border: 2px solid #0d2d53;
-    background-color: #0d2d53;
-    width: 100%;
-    height: 80%;
-  } */
-  
-  /* .material-box:hover + .outline-box {
-      transform: translate(10px, -212px);
-  } */
 
 
 

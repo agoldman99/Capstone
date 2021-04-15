@@ -344,7 +344,6 @@ over the flip box container */
     height: 10rem;
     display: block;
     position: absolute;
-    top: 25%;
     width: 100%;
     /*this might have caused the random horizontal scroll??*/
     /* margin-left: 6rem;
@@ -388,8 +387,20 @@ over the flip box container */
     position: static;
     width: 100%;
     height: 275px;
-    margin-left: 6rem;
+    /* margin-left: 6rem;
+    margin-right: 6rem; */
     background-color:#f6f5eb;
+  }
+
+  #grid-aboutplayindex-id {
+    background-color: #D1574F;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 20%; /* At the top */
+    z-index: 99;
   }
   
   .grid-item {
@@ -586,6 +597,15 @@ over the flip box container */
 
 
   /*WHAT IS PLAY? Page*/
+  #material-section-nav-id {
+    position: -webkit-sticky; /* Safari*/
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+    padding: 90px 10px;
+    transition: 0.4s;
+  }
+
   .what-is-play-section {
     display: block;
     width: 100%;

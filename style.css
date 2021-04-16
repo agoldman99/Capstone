@@ -305,6 +305,7 @@ over the flip box container */
   top: 10rem;
   width: 100%;
   height: 100%;
+  justify-content: center;
 }
 
 .grid-item-home {
@@ -389,6 +390,7 @@ over the flip box container */
     /* margin-left: 6rem;
     margin-right: 6rem; */
     background-color:#f6f5eb;
+    justify-content: center;
   }
 
   #grid-aboutplayindex-id {
@@ -396,9 +398,9 @@ over the flip box container */
     border-radius: 50%;
     overflow: hidden;
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-    position: fixed; /* Sticky/fixed navbar */
+    position: sticky; /* Sticky/fixed navbar */
     width: 100%;
-    top: 20%; /* At the top */
+    top: 10%; /* At the top */
     z-index: 99;
   }
   

@@ -96,7 +96,7 @@ body {
   .header {
     display: block;
     width: 100%;
-    height: 225px;
+    height: 150px;
     position: static;
     top: 0;
   }
@@ -402,11 +402,11 @@ over the flip box container */
   #grid-aboutplayindex-id {
     /* background-color: #D1574F;
     border-radius: 50%; */
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: sticky; /* Sticky/fixed navbar */
     width: 100%;
-    top: 10%; /* At the top */
+    top: 5%; /* At the top */
     z-index: 99;
   }
   
@@ -609,7 +609,6 @@ over the flip box container */
     position: sticky;
     top: 0%;
     z-index: 10;
-    padding: 0px 10px;
     transition: 0.4s;
     background-color: #f6f5eb;
   }

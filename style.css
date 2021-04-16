@@ -35,7 +35,7 @@ body {
     font-size: 150px;
     color: #0d2d53;
     margin:0;
-    line-height: 10rem; }
+    line-height: 8rem; } */
   
   /* MATERIALS NAME STYLE*/
   h2 {
@@ -683,7 +683,7 @@ over the flip box container */
   .answer1 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 20%; 
+    top: 25%; 
     
     margin-top: 3rem;
     margin-bottom: 3rem;

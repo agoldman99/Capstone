@@ -162,7 +162,7 @@ body {
     font-family: obviously-narrow,sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 150px;
+    font-size: 120px;
     text-align: center;
     white-space: nowrap;
 
@@ -171,7 +171,7 @@ body {
     -ms-transform: translateX( -50%);
     transform: translateX(-50%);
     letter-spacing: 3px;
-    line-height: 1.0;
+    line-height: .85;
   }
 
 
@@ -772,7 +772,7 @@ over the flip box container */
   }
 
 
-/*TYPES OF PLAY SECTION*/
+/*------TYPES OF PLAY SECTION------*/
 .types-of-play-section {
   display: block;
   width: 100%;
@@ -808,6 +808,14 @@ over the flip box container */
     margin: 1rem;
     padding: 1rem;
   }
+
+  /*------TYPES OF PLAY SECTION------*/
+.play-inequity-section {
+  display: block;
+  width: 100%;
+  height: 2000px;
+  position: static;
+}
 
 
 

@@ -202,8 +202,6 @@ body {
   font-size: 1rem;
   /* because of flexbox this pushes over */
   /* to the far right side */
-  float: right;
-  margin-right: 8%;
   margin-top: 8%;
 }
 

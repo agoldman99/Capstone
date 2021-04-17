@@ -1,10 +1,6 @@
 const canvas = document.getElementById('canvas');
 
-/* the buttons at the bottom of the canvas */
-const decrBtn = document.getElementById('decr');
-const lineWidthEl = document.getElementById('lineWidth');
-const incrBtn = document.getElementById('incr');
-const colorEl = document.getElementById('color');
+/* clear canvas button */
 const clearEl = document.getElementById('clear');
 
 const ctx = canvas.getContext('2d');
@@ -80,51 +76,8 @@ function drawLine(moveToX, moveToY, lineToX, lineToY) {
    ctx.stroke();                /* actually draw the line */
 }  /* end drawLine() */
 
-/* update the value on screen that the +/- control */
-function updateRadiusOnScreen() {
-   lineWidthEl.innerText = radius;
-} /* end updateRadiusOnScreen */
-
-/* the decrease button */
-decrBtn.addEventListener('click', () => {
-   radius -= 5;
-
-   /* limit it to 5 */
-   if (radius < 5) {
-      radius = 5;
-   }
-
-   updateRadiusOnScreen();
-})
-
-/* the increase button */
-incrBtn.addEventListener('click', () => {
-   radius += 5;
-
-   /* limit it to 50 */
-   if (radius > 50) {
-      radius = 50;
-   }
-
-   updateRadiusOnScreen();
-})
-
-/* the color button */
-/* (e) = event object (the data about the event)*/
-colorEl.addEventListener('change', (e) => 
-                     color = e.target.value);
-
 /* the clear button */
 clearEl.addEventListener('click', () => 
             ctx.clearRect(0, 0, canvas.width, canvas.height));
-
-
-
-
-/*------CHANGING SQUARES CLICKS------*/
-   /*there is definately a more concise way to do this, but will figure out at another time*/
-function mouseDown() {document.getElementById("square-grid-item1").style.backgroundColor = "#f6f5eb";}
-function mouseUp() {document.getElementById("square-grid-item1").style.backgroundColor = "#f6f5eb";}
-
 
 

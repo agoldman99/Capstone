@@ -105,8 +105,8 @@ body {
   /*styles for source links*/
   .source {
     font-size: 16px;
-    color: #FF9F69;
-    margin: 0;
+    color: #0d2d53;
+    margin-top: 2rem;
   }
   
   
@@ -304,7 +304,7 @@ over the flip box container */
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 345%;
+  top: 310%;
   justify-content: center;
 }
 
@@ -358,6 +358,7 @@ over the flip box container */
   text-align: center;
   width: 100%;
   height: 80%;
+  height: 100%;
   padding: 3rem;
   border-radius: 50%;
 }
@@ -688,7 +689,9 @@ over the flip box container */
       unsure, but need to add space somehow...*/
     /* height: 80rem; */
     height: 100%;
-    z-index: -2;
+    /*not sure why i had a z-index here, but it 
+      was causing the source links to not work*/
+    /* z-index: -2; */
     top: 30rem;
     /*this might have been causing the weird horizontal scroll??*/
     /* margin-left: 6rem;

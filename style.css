@@ -65,10 +65,12 @@ body {
     font-family: obviously-narrow,sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 150px;
+    /* font-size: 150px; */
+    font-size: 10vw;
     color: #0d2d53;
     margin:0;
-    line-height: 8rem; }
+    /* line-height: 8rem; */
+    line-height: 9vw; }
   
   /* MATERIALS NAME STYLE*/
   h2 {
@@ -129,8 +131,9 @@ body {
   .header {
     display: block;
     width: 100%;
-    height: 150px;
-    position: static;
+    height: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     top: 0;
     position: relative;
     z-index: 12;
@@ -138,7 +141,8 @@ body {
   
   .nav-bar {
     display: block;
-    margin: 6rem;
+    margin-left: 80%;
+    margin-right: 6rem;
     position: static;
     background-color: #f6f5eb;
   }
@@ -150,14 +154,14 @@ body {
   }
   
   /*ABOUT PLAY BUTTON*/
-  .nav-bar-button1 {flex: 30%;
+  .nav-bar-button1 {display: block; margin:0;
     /* border: 1px solid #0d2d53;*/}
   a:link { color: #0d2d53; text-decoration: none;}
   a:visited {color: #0d2d53; text-decoration: none;}
   a:hover {color: #28B8D8; text-decoration: none;}
   
   /*MATERIALS FOR PLAY BUTTON*/
-  .nav-bar-button2 {flex: 30%;
+  .nav-bar-button2 {display: block; margin:0;
     /*border: 1px solid #0d2d53;*/}
   a:link { color: #0d2d53; text-decoration: none;}
   a:visited {color: #0d2d53; text-decoration: none;}
@@ -381,22 +385,23 @@ over the flip box container */
   }
 
   .mat-description-div {
-    height: 10rem;
     display: block;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     /*this might have caused the random horizontal scroll??*/
     /* margin-left: 6rem;
     margin-right: 6rem; */
     /* border: 1px solid #FF9F69; */
-    padding: 6rem;
+    padding: 1rem;
   }
 
   .material-description {
     display: block;
     position: relative;
+    width: 100%;
     /* border: 1px solid #FF9F69; */
     text-align: center;
+    padding: 1rem;
 
     margin: 0;
     top: 50%;
@@ -476,7 +481,7 @@ over the flip box container */
   position: static;
   width: 100%;
   height: 500px;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   justify-content: center;
 }
 .grid-activities-item {
@@ -507,15 +512,15 @@ over the flip box container */
 }
 
 .nextact-description-div {
-  height: 10rem;
+  height: 6rem;
   display: block;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   /*this might have caused the random horizontal scroll??*/
   /* margin-left: 6rem;
   margin-right: 6rem; */
   /* border: 1px solid #FF9F69; */
-  padding: 6rem;
+  padding: 1rem;
 }
 
 .nextact-description {

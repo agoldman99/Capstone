@@ -416,9 +416,9 @@ over the flip box container */
     grid-column-gap: 5%;
     /* border: 1px solid #0d2d53; */
     padding: 2rem;
-    /* position: static; */
-    position: absolute;
-    top: 50%;
+    position: static;
+    /* position: absolute; */
+    /* top: 50%; */
     width: 100%;
     height: 500px;
     justify-content: center;
@@ -426,13 +426,15 @@ over the flip box container */
 
   .grid-aboutplay {
     display: grid;
-    grid-template-columns: 24% 24% 24%;
+    grid-template-columns: 20% 20% 20%;
     grid-column-gap: 5%;
     /* border: 1px solid #0d2d53; */
     padding: 2rem;
+    padding-left:10rem;
+    padding-right:10rem;
     position: static;
     width: 100%;
-    height: 175px;
+    height: 100px;
     /* margin-left: 6rem;
     margin-right: 6rem; */
     /* background-color:#f6f5eb; */
@@ -460,8 +462,11 @@ over the flip box container */
     border: 2px solid #0d2d53;
     background-color: #f6f5eb;
     text-align: center;
+    justify-content: center;
     width: 100%;
     height: 80%;
+    margin:0;
+    padding:.5rem;
   }
   .material-box:hover {
     outline: 7px solid #0d2d53;
@@ -697,7 +702,7 @@ over the flip box container */
     /*not sure why i had a z-index here, but it 
       was causing the source links to not work*/
     /* z-index: -2; */
-    top: 30rem;
+    top: 20rem;
     /*this might have been causing the weird horizontal scroll??*/
     /* margin-left: 6rem;
     margin-right: 6rem; */
@@ -706,7 +711,7 @@ over the flip box container */
   .what-is-play-head {
       display: block;
       width: 40%;
-      height: 400%;
+      height: 300%;
       margin-left: 6rem;
       margin-right: 6rem;
       /* border: 1px solid #0d2d53; */

@@ -201,6 +201,11 @@ body {
     line-height: .85;
   }
 
+  .brightblue:hover {color: #28B8D8;}
+  .lightblue:hover {color: #BBE0EC;}
+  .red:hover {color: #D1574F;}
+  .orange:hover {color: #FF9F69;}
+
 
 /*---------DRAWING CANVAS----------------------------------------------------*/
 * {
@@ -225,7 +230,7 @@ body {
    height:100%;
 }
 
-#clear { /*canvas clear button*/
+.clear { /*canvas clear button*/
   font-size: 1rem;
   /* because of flexbox this pushes over */
   /* to the far right side */
@@ -262,9 +267,8 @@ back side */
 
 /* Do an horizontal flip when you move the mouse 
 over the flip box container */
-.circle-flip-card:hover .circle-flip-card-inner {
-  transform: rotateY(180deg);
-}
+/* .circle-flip-card:hover .circle-flip-card-inner {
+  /* transform: rotateY(180deg);} */
 
 /* Position the front and back side */
 .circle-flip-card-front, .circle-flip-card-back {

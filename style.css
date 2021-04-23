@@ -312,7 +312,7 @@ over the flip box container */
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 310%;
+  top: 300%;
   justify-content: center;
 }
 
@@ -523,6 +523,7 @@ over the flip box container */
 .nextact-description-div {
   height: 6rem;
   display: block;
+  position: relative;
   /* position: absolute; */
   width: 100%;
   /*this might have caused the random horizontal scroll??*/
@@ -534,16 +535,29 @@ over the flip box container */
 
 .nextact-description {
   display: block;
-  position: relative;
+  position: static;
   /* border: 1px solid #FF9F69; */
   text-align: center;
 
   margin: 0;
-  top: 50%;
+  /*top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
+
+
+.nav-bar {
+  display: block;
+  margin-left: 80%;
+  margin-right: 6rem;
+  position: static;
+  background-color: #f6f5eb;
+}
+
+
+
+
 
 /*flip card activities section*/
 /* The flip card container - set the width and height to 
@@ -689,8 +703,7 @@ over the flip box container */
   .what-is-play-section {
     display: block;
     width: 100%;
-    /* height: 5300px; */
-    height: 100%;
+    height: 7600px;
     position: static;
   }
 
@@ -732,7 +745,8 @@ over the flip box container */
   .what-is-play-head-nostick {
      /*uses h1 tag*/
      display: block;
-     width: 40%;
+     /* width: 40%; */
+     width: 100%;
      margin-left: 6rem;
      margin-right: 6rem;
      /* border: 1px solid #0d2d53; */
@@ -758,6 +772,7 @@ over the flip box container */
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 25%; 
+    color: #0d2d53;
     
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -815,7 +830,7 @@ over the flip box container */
 .types-of-play-section {
   display: block;
   width: 100%;
-  height: 5600px;
+  height: 8800px;
   position: static;
 }
 
@@ -852,7 +867,7 @@ over the flip box container */
 .play-inequity-section {
   display: block;
   width: 100%;
-  height: 2000px;
+  height: 600px;;
   position: static;
 }
 

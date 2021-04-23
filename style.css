@@ -267,8 +267,8 @@ back side */
 
 /* Do an horizontal flip when you move the mouse 
 over the flip box container */
-/* .circle-flip-card:hover .circle-flip-card-inner {
-  /* transform: rotateY(180deg);} */
+.circle-flip-card:hover .circle-flip-card-inner {
+  transform: rotateY(180deg);}
 
 /* Position the front and back side */
 .circle-flip-card-front, .circle-flip-card-back {

@@ -239,6 +239,71 @@ clearEl3.addEventListener('click', () =>
 
 
 
+/*NOT IN USE YET*/
+/*-----------circle 4 canvas-------------------------------*/
+const canvas4 = document.getElementById('canvas4');
+const clearEl4 = document.getElementById('clear4');
+const ctx4 = canvas4.getContext('2d');
+
+/* initialize global variables */
+let radius4 = 3;
+let isPressed4 = true;
+let color4 = '#0d2d53';
+let currPosX4, currPosY4;
+
+/* set up the event listeners */
+canvas4.addEventListener('mousedown', (e) => {
+   isPressed4 = true;
+
+   currPosX4 = e.offsetX;
+   currPosY4 = e.offsetY;
+
+   drawCircle4(currPosX4, currPosY4);
+   drawLine4(currPosX4, currPosY4, x24, y24); /*if take this line away, it will draw dots*/
+});
+
+canvas4.addEventListener('mouseup', (e) => {
+   isPressed4 = false;
+
+   currPosX4 = undefined;
+   currPosY4 = undefined;
+});
+
+canvas4.addEventListener('mousemove', (e) => {
+   if( isPressed4) { 
+      const x24 = e.offsetX;
+      const y24 = e.offsetY;
+
+      drawCircle4(x24, y24);
+      drawLine4(currPosX4, currPosY4, x24, y24);
+
+      currPosX4 = x24;
+      currPosY4 = y24;
+   }
+});
+
+function drawCircle4(x4, y4) {
+   ctx4.beginPath();
+   ctx4.arc(x4, y4, radius4, 0, Math.PI * 2);
+   ctx4.fillStyle = color4;
+   ctx4.fill();
+}
+
+function drawLine4(moveToX4, moveToY4, lineToX4, lineToY4) {
+   ctx4.beginPath();
+   ctx4.moveTo(moveToX4, moveToY4);
+   ctx4.lineTo(lineToX4, lineToY4);
+   ctx4.strokeStyle = color4;
+
+   ctx4.lineWidth = radius4 * 2;
+   ctx4.stroke();                
+} 
+
+clearEl4.addEventListener('click', () => 
+            ctx4.clearRect(0, 0, canvas4.width, canvas4.height));
+
+
+
 
 
 

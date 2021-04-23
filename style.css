@@ -93,10 +93,13 @@ body {
     color: #FF9F69;
     margin: 0;  }
 
-  /*light blue, small subheadings*/
+  /*material activity card headings*/
   h6 {
-    font-size: 14px;
-    color: #BBE0EC;
+    font-family: obviously-narrow,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px;
+    color: #0d2d53;
     margin:0;}
   
   /*white paragraph text*/
@@ -355,9 +358,39 @@ over the flip box container */
   justify-content: center;
 }
 
+.grid-material-home-mat {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 5%;
+  /* border: 1px solid #0d2d53; */
+  padding: 2rem;
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
 .grid-item-home {
   /* border: 1px solid #0d2d53; */
   margin:0;
+}
+
+.grid-item-home-mat {
+  /* border: 1px solid #0d2d53; */
+  margin:1.5rem;
+  height: 250px;
+}
+
+.material-box-home-mat {
+  display: block;
+  background-color: #f6f5eb;
+  text-align: center;
+  width: 120%;
+  height: 100%;
+  padding: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .material-box-home {
@@ -365,12 +398,16 @@ over the flip box container */
   background-color: #f6f5eb;
   text-align: center;
   width: 100%;
-  height: 80%;
   height: 100%;
   padding: 3rem;
   border-radius: 50%;
+  overflow: hidden;
 }
 .material-box-home:hover {
+  border: 2px solid #0d2d53;
+}
+
+.material-box-home-mat:hover {
   border: 2px solid #0d2d53;
 }
 
